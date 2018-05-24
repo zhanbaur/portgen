@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/range_title" />
+    <EditText
+        android:id="@+id/min_port_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@integer/min_port"
+        android:inputType="numberDecimal"
+        android:digits="0123456789" />
+    <EditText
+        android:id="@+id/max_port_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@integer/max_port"
+        android:inputType="numberDecimal"
+        android:digits="0123456789" />
+    <RadioGroup
+        android:id="@+id/protocol_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <RadioButton
+            android:id="@+id/protocol_type_tcp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tcp_radio"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/protocol_type_udp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/udp_radio" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_generate" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@integer/result" />
+    <TextView
+        android:id="@+id/result_protocol"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/protocol_type" />
+    <Button
+        android:id="@+id/btn_accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_accept" />
+    <TextView
+        android:id="@+id/result_accept"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="not accepted" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Network port number</string>
+    <string name="range_title">Range</string>
+    <string name="tcp_radio">tcp</string>
+    <string name="udp_radio">udp</string>
+    <string name="btn_generate">generate</string>
+    <string name="btn_accept">accept</string>
+    <string name="protocol_type">tcp/udp</string>
+    <string name="toast_port_range_alert">Please, set max. port value > min. port number</string>
+    <string name="toast_port_range_max_alert">Please, set max. port value 65535 or less</string>
+    <string name="toast_port_range_min_alert">Please, set min. port value 65535 or less</string>
+</resources>
