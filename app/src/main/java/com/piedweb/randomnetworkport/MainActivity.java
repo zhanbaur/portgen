@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         final Random random = new Random();
         final TextView result = findViewById(R.id.result);
         final TextView resultProtocol = findViewById(R.id.result_protocol);
-        final TextView resultAcept = findViewById(R.id.result_accept);
+        final TextView resultAccept = findViewById(R.id.result_accept);
 
         final Button btnGenerate = findViewById(R.id.btn_generate);
         btnGenerate.setOnClickListener(new View.OnClickListener() {
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                     } else if (udpProtocol.isChecked()) {
                         resultProtocol.setText("udp");
                     }
-                    resultAcept.setText("not accepted");
+                    resultAccept.setText("not accepted");
                 }
             }
         });
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         btnAccept.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                resultAcept.setText("accepted");
+                resultAccept.setText("accepted");
             }
         });
     }
